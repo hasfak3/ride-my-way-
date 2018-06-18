@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SignUp Page</title>
+  <link rel="stylesheet" href="css/mainCSS.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<header>
+	<h1 style="float:left;">Ride My Way</h1>
+	
+	<nav>
+		<ul>
+			<li style="text-align: center;"><a href="home.html">HOME</a></li>
+			<li><a href="#">ABOUT</a></li>
+			<li><a>REGISTER
+				<div class="dropdown">
+					<div class="dropdown-content">
+						<a href="signup.html">driver</a>
+						<a href="signup1.html">passenger</a>
+					</div>
+				</div>
+			</a></li>
+		</ul>
+	</nav>
+</header>
+<center>
+  <h3><u>Driver's Registration Form</u></h3>
+      <div class="details">
+         <form action="adduser.php" method="post">
+           <table>
+              <tr>
+                <th>Full Name: </th>
+                <td><input type="text" id="fname" name="fname" pattern=".{3,25}" title="3-15 characters" size="29" placeholder="write full name" required></td>
+              </tr>
+              <tr>
+                <th>Gender: </th>
+                <td><input type="radio" id="gender" name="gender" value="Male" checked="checked"> Male<input type="radio" id="gender" name="gender" value="Female"> Female<input type="radio" id="gender" name="gender" value="Other"> Other
+                </td>
+              </tr>
+			  <tr>
+                <th>Phone Number: </th>
+                <td><input type="text" id="phone" name="phone" size="29" pattern=".{11,16}" placeholder="01XXXXXXXXX" required></td>
+              </tr>
+              <tr>
+               <th>Email: </th>
+               <td><input type="text" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required placeholder="Enter a valid email" title="Input valid email,please!" size="29"/></td>
+             </tr>
+              <tr>
+                <th>Address: </th> 
+                <td><textarea rows="5" cols="20" type="text" id="address" name="address" required></textarea></td>
+            </tr>
+			<tr>
+                <th>Lincese No: </th>
+                <td><input type="text" id="licenseNo" name="licenseNo" ></td>
+              </tr>
+			<h1> uploads</h1>
+            <tr>
+                <th>NationalID: </th> 
+                <td><input type="file" id="nationalId" name="nationalId" required></input></td>
+            </tr>
+			<tr>
+                <th>Driving Permit: </th>
+                <td><input type="file" id="permit" name="permit" required> </td>
+              </tr>
+			  <tr>
+                <th>Drivers' Photo: </th>
+                <td><input type="file" id="photo" name="photo" required></td>
+              </tr>
+             <tr>
+               <th>Password: </th>
+               <td><input type="password" name="password" id="password" pattern=".{3,}" title="Three or more characters" size="29" required /></td>
+             </tr>
+              <tr>
+              <th></th>
+              <td><input type="submit" name="submit" value="SignUp"/></td>
+              </tr>   
+            </table>
+			<p style="color:red;">Already have an account?
+			Log In <a href="login.html" style="text-decoration:underline">here</a></p>
+         </form>
+      </div>
+</center>
+<br/> <br/>
+    <header>
+    <nav>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li class="phone"><a href="tel:+267-77-327-8127">+267-773278127</a></li>
+        </ul>
+      </nav>
+      <div align="center" style="padding-top: 10px">
+          <h2>Copyright&copy; 2018 </i></b></h2>
+          <a href="http://www.facebook.com"><img src="images/facebook-wrap.png" alt="Facebook Logo" width="35" height="30"></a>
+          <a href="http://twitter.com"><img src="images/twitter-wrap.png" alt="Twitter Logo" width="35" height="30"></a>
+          <a href="http://plus.google.com"><img src="images/google-wrap.png" alt="GooglePlus Logo" width="35" height="30"></a>
+
+      </div>
+    </header>
+</body>
+</html>
